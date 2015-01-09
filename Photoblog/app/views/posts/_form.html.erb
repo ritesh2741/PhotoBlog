@@ -1,0 +1,18 @@
+<%= form_for @post, :html => {:multipart => true} do |f| %>
+  
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<div class="category">
+  <%= f.collection_select :picture, Post::CATEG, :to_s, :to_s, 
+       :include_blank => true
+  %>
+  <%= f.submit "Create" %> 
+</div>
+<% end %> 
+ 

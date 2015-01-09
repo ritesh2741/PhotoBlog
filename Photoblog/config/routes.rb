@@ -33,6 +33,8 @@ Photoblog::Application.routes.draw do
 
   # Sample resource route with more complex sub-resources
      resources :posts do
+
+
   #     resources :comments
   #     resources :sales do
   #       get 'recent', :on => :collection
