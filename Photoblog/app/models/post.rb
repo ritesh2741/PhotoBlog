@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
-  attr_accessible :title, :body, :picture, :name, :category
+  attr_accessible :title, :body, :picture, :catatt
   mount_uploader :picture, PictureUploader
-  CATEG=['Sports','Scenery','Crystals']
+  has_one:category
+  CATEG=['Sports','Scenery','Potrait']
+  
 end

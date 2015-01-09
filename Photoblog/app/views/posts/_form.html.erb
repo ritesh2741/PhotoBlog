@@ -9,10 +9,9 @@
   </div>
 
 <div class="category">
-  <%= f.collection_select :picture, Post::CATEG, :to_s, :to_s, 
+  <%= f.collection_select :catatt, Post::CATEG, :to_s, :to_s, 
        :include_blank => true
   %>
-  <%= f.submit "Create" %> 
-</div>
+  <%= f.submit "Create" %> </div>
 <% end %> 
  
