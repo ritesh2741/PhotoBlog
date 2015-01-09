@@ -14,8 +14,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
     # '/Users/CloudFactory/test/PhotoBlog/Photoblog/uploads'
-    binding.pry
-    
+       
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 

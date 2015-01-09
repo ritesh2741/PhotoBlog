@@ -1,4 +1,4 @@
-class AddCatattToPosts < ActiveRecord::Migration
+class AddCatattToPost < ActiveRecord::Migration
   def change
     add_column :posts, :catatt, :string
   end
